@@ -504,7 +504,7 @@ class HairNet (bpy.types.Operator):
             if (self.meshKind=="FIBER"):
                 hairObj = self.hairObjList[0]
                 print("Hair fiber")
-                hairGuides = fibersToGuides(hairObj)
+                hairGuides = self.fibersToGuides(hairObj)
 
             if (self.meshKind=="CURVE"):
                 #Preserve Active and selected objects
